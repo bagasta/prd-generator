@@ -35,7 +35,6 @@ export async function POST(req: Request) {
       system: getSystemPrompt(lang),
       messages: [{ role: 'user', content: buildUserPrompt(brief, (answers as Record<string, string>) ?? {}) }],
       maxTokens: 4000,
-      onError: () => {}, // swallow stream errors caused by client disconnect
     })
 
     return result.toTextStreamResponse()
