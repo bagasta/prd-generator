@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-jetbrains: 'JetBrains Mono', monospace;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #e5e5e5;
+  font-family: var(--font-inter);
+}
+
+/* Markdown styles for PRD preview */
+.prose-prd {
+  font-family: var(--font-jetbrains);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: #d4d4d4;
+}
+
+.prose-prd h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00ff88;
+  border-bottom: 1px solid #222;
+  padding-bottom: 0.5rem;
+  margin: 1.5rem 0 1rem;
+}
+
+.prose-prd h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #e5e5e5;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.prose-prd h3 {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #a3a3a3;
+  margin: 1rem 0 0.5rem;
+}
+
+.prose-prd p {
+  margin: 0.5rem 0;
+}
+
+.prose-prd ul,
+.prose-prd ol {
+  margin: 0.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.prose-prd li {
+  margin: 0.25rem 0;
+}
+
+.prose-prd code {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 3px;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.8125rem;
+  color: #00ff88;
+}
+
+.prose-prd pre {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+
+.prose-prd pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: #d4d4d4;
+}
+
+.prose-prd table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  font-size: 0.8125rem;
+}
+
+.prose-prd th {
+  background: #111;
+  color: #a3a3a3;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #222;
+}
+
+.prose-prd td {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid #1e1e1e;
+}
+
+.prose-prd tr:nth-child(even) td {
+  background: #0d0d0d;
+}
+
+.prose-prd blockquote {
+  border-left: 3px solid #00ff88;
+  padding-left: 1rem;
+  color: #888;
+  margin: 0.75rem 0;
+}
+
+.prose-prd hr {
+  border: none;
+  border-top: 1px solid #222;
+  margin: 1.25rem 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
